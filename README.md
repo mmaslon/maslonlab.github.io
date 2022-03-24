@@ -1,57 +1,12 @@
-# petridish 🧫
+## Mission of the lab
 
-Petridish is a Jekyll theme for research project websites. Or your personal blog or lab website. 👩‍🔬 It's mobile-friendly (thanks to [Bootstrap 5](https://getbootstrap.com/docs/5.1/)), free, easy to customize, and designed to work well with [GitHub Pages](https://pages.github.com/).
+We use stem cell models, high throughput sequencing technologies (RNA-seq, ATAC-seq, TT-seq), CRISPR-Cas9 mediated genome editing, and bioinformatics, to understand the mechanisms that underlie nascent RNAPII transcription during development and in genome stability. 
 
-## Installation
+### Selected publications 
 
-See the demo website for instructions:
+<sup>1</sup> joint first author
+1.	Maslon MM<sup>1</sup>, Heras SR<sup>1</sup>, Bellora N, Eyras E, Cáceres JF. The translational landscape of the splicing factor SRSF1 and its role in mitosis. Elife. 2014 May 6;3:e02028. doi: 10.7554/eLife.02028. Online ahead of print. PMID: 24842991
 
-- [Installation](https://peterdesmet.github.io/petridish/installation)
-- [Configuration](https://peterdesmet.github.io/petridish/configuration)
-- [Markdown](https://peterdesmet.github.io/petridish/markdown)
+2.	Haward F<sup>1</sup>, Maslon MM<sup>1</sup>, Yeyati PL<sup>1</sup>, Bellora N, Hansen JN, Aitken S, Lawson J, von Kriegsheim A, Wachten D, Mill P, Adams IR, Caceres JF. Nucleo-cytoplasmic shuttling of splicing factor SRSF1 is required for development and cilia function. Elife. 2021 Aug 2;10:e65104. doi: 10.7554/eLife.65104. PMID: 34338635 
 
-## Preview
-
-[Demo website](https://peterdesmet.github.io/petridish)
-
-[![screenshot](screenshot.png)](https://peterdesmet.github.io/petridish)
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/peterdesmet/petridish. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-[MIT License](LICENSE)
-
----
-
-<!-- All the above is about the Petridish theme, so you might want to remove that. -->
-
-_The instructions below can be adapted/included in the README of your site repository._
-
-## Usage
-
-This website makes use of the static website generator [Jekyll](https://jekyllrb.com/) and the [Petridish](https://github.com/peterdesmet/petridish) theme. **Each commit to `main` will automatically trigger a new build on GitHub Pages.** There is no need to build the site locally, but you can by installing Jekyll and running `bundle exec jekyll serve`.
-
-Minor changes can be committed directly to `main`.
-
-Changes requiring review (e.g. new blog posts) should be created in a separate branch and submitted as a pull request. Some guidelines:
-
-- Use `72dpi` as image resolution
-- Place background images in `assets/backgrounds`, name them after their corresponding page/post and ideally crop them to `2100 x 700px`
-- Place content images in `assets/images/`, name them after their corresponding page/post + a suffix, e.g. `-month-tracks-3`
-- Add categories to posts to indicate the project, output type, software language, and maybe partner organization, e.g. `[TrIAS, software, R, GBIF, rOpenSci]`
-- Create internal links as `[previous post]({% link 2013-10-01-tracking-eric.md %})`
-
-## Repo structure
-
-The repository structure follows that of Jekyll websites.
-
-- General site settings: [_config.yml](_config.yml)
-- Pages: [pages/](pages/)
-- Posts: [_posts/](_posts/)
-- Images & static files: [assets/](assets/)
-- Top navigation: [_data/navigation.yml](_data/navigation.yml)
-- Footer content: [_data/footer.yml](_data/footer.yml)
-- Team members: [_data/team.yml](_data/team.yml)
+3.	Maslon MM, Braunschweig U, Aitken S, Mann AR, Kilaanowski F, Hunter CJ, Blencowe BJ, Kornblihtt AR, Adams IR, Cáceres JF. A slow transcription rate causes embryonic lethality and perturbs kinetic coupling of neuronal genes. EMBO J. 2019 May 2;38(9):e101244. doi: 10.15252/embj.2018101244. Epub 2019 Apr 15. PMID: 30988016 https://www.embopress.org/doi/full/10.15252/embj.2018101244 
