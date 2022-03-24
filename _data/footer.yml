@@ -20,6 +20,5 @@ columns:
 # Small print license statement to add at the bottom of the footer. Can be Markdown
 # Will be prefixed by "© {{ site.author }}" if defined in _config.yml
 license: >
-  Theme from Peter Desmet
-  Content on this site is licensed under a [CC BY 4.0 License](http://creativecommons.org/licenses/by/4.0/).
+  Thanks to Peter Desmet for the theme, licensed under a [CC BY 4.0 License](http://creativecommons.org/licenses/by/4.0/).
 
