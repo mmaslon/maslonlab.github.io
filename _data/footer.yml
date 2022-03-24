@@ -14,11 +14,12 @@ columns:
 
   - description: > # E.g. funding acknowledgement. Can be Markdown
       This project is made with ❤ for open source.
+      Side maintained by Magda Maslon
+
 
 # Small print license statement to add at the bottom of the footer. Can be Markdown
 # Will be prefixed by "© {{ site.author }}" if defined in _config.yml
 license: >
-  Side maintained by Magda Maslon
   Theme from Peter Desmet
   Content on this site is licensed under a [CC BY 4.0 License](http://creativecommons.org/licenses/by/4.0/).
 
