@@ -18,7 +18,7 @@ archive_permalink: /blog/               # Permalink of page using archive.html l
 # logo: /assets/theme/images/pol2.png # Logo in navbar, will be displayed with 30px height
 colors:
   links: "#6c6c93"                      # Color for links: use a readable color that contrasts well with dark text
-  banner: "#cccccc"                     # Background color for page banners: use color that contrasts well with white
+  banner: "#696464"                     # Background color for page banners: use color that contrasts well with white
   footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
 rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
 
