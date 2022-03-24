@@ -1,7 +1,7 @@
 ---
 title: Welcome to Maslon Lab
 date: 2022-03-24 
-categories: [Shared category, 👩‍🔬 Emoji category, "Special /?{:å characters", " Whitespace before and after "]
+categories: ["General"]
 ---
 
 Welcome to my website. I am going to use this space to advertise new positions, talk about our research.
