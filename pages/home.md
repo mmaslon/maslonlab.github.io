@@ -4,7 +4,11 @@ title: Mission of the lab
 background: /assets/theme/images/pol2.png
 permalink: /
 ---
-We use stem cell models, high throughput sequencing technologies (RNA-seq, ATAC-seq, TT-seq), CRISPR-Cas9 mediated genome editing, and bioinformatics, to understand the mechanisms that underlie nascent RNAPII transcription during development and in genome stability. 
+We want to unravel basic mechanisms involved in human development and homeostasis.
+
+We thrive to promote excellent science education.
+
+Experimental work will be carried out using stem cell models, high throughput sequencing technologies (RNA-seq, ATAC-seq, TT-seq), CRISPR-Cas9 mediated genome editing, and bioinformatics, to understand the mechanisms that underlie nascent RNAPII transcription during development and in genome stability. 
 
 ### Selected publications 
 
