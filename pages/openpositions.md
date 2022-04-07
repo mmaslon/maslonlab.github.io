@@ -9,7 +9,7 @@ Currently advertised positions:
 
 PhD student:
 
-http://docs.google.com/gview?embedded=true&url=https://github.com/mmaslon/maslonlab.github.io/blob/7f639fefece8fddbb24d4e51daba8bf23fe3122d/assets/theme/images/PhD_recrutiment.pdf
+<iframe src="https://drive.google.com/file/d/1TigQdXk7uFDKflGPPBTO1Q0QdRiu6gJc/preview" width="640" height="480" allow="autoplay"></iframe>
 
 
 Postdoc:
