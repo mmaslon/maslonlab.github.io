@@ -9,6 +9,9 @@ We will be using shell to do most of our work. Shell accepts and runs commands. 
 .bash_profile file is where you can customize your environmental variable 
 below a typical bash profile which also adds a directory ‘bin’ to your path ($PATH described above). 
 
+<img src="https://user-images.githubusercontent.com/23424217/159682152-34235b7f-0b20-4fae-bfab-9a2fe02639ff.png" width="400" align="left">
+</figure>
+
 2) $PATH 
 
 a variable $PATH is a set of directories (separated by “ :” ) where the system assumes the executable programs are located. 
