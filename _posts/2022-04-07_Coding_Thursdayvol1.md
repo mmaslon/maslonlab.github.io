@@ -1,5 +1,8 @@
 
-Coding Thursday: 07.04.22
+---
+title: "Bash profile"
+categories: [Coding Thursday]
+---
 
 We will be using shell to do most of our work. Shell accepts and runs commands. When you login, few files are read in to set up your environment. 
 
