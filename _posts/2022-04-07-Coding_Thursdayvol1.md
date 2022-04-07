@@ -25,3 +25,5 @@ when you use an executable command in your script, the system will look into you
 
 it is a good idea to create a sub-directory bin in your home directory - this is a place to keep any scripts or programs you write, 
 or to add symlinks to some programs.  
+
+You should add bin to your bash profile. 
