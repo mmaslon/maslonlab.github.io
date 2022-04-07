@@ -9,6 +9,6 @@ Currently advertised positions:
 
 PhD student:
 
-<object data=="/assets/theme/images/PhD_recruitment.pdf" width="1000" height="1000" type='application/pdf'></object>
+<object data="/assets/theme/images/PhD_recruitment.pdf" width="1000" height="1000" type='application/pdf'></object>
 
 Postdoc:
