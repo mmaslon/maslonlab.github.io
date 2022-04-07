@@ -21,9 +21,15 @@ a variable $PATH is a set of directories (separated by “ :” ) where the syst
 
 when you use an executable command in your script, the system will look into your $PATH to identify the executable code. 
 
+to check what your path is you can use the following command:
+
+echo $PATH
+
 3) bin
 
 it is a good idea to create a sub-directory bin in your home directory - this is a place to keep any scripts or programs you write, 
 or to add symlinks to some programs.  
 
-You should add bin to your bash profile. 
+You should add bin to your bash profile [it is already done in the example above]
+
+
