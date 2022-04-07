@@ -12,7 +12,7 @@ We will be using shell to do most of our work. Shell accepts and runs commands. 
 .bash_profile file is where you can customize your environmental variable 
 below a typical bash profile which also adds a directory ‘bin’ to your path ($PATH described above). 
 
-<img src="https://github.com/mmaslon/maslonlab.github.io/blob/7cefb92e6420f29519b01073f0732e75e79db787/assets/theme/images/fig1_31333.png" width="800" align="center">
+<img src="assets/theme/images/fig1_31333.png" width="800" align="center">
 </figure>
 
 2) $PATH 
