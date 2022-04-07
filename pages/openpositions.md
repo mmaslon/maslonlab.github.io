@@ -9,7 +9,8 @@ Currently advertised positions:
 
 PhD student:
 
-<embed src="/assets/theme/images/PhD_recruitment.pdf" type="application/pdf" />
+
+https://docs.google.com/viewer?url=
 
 
 Postdoc:
