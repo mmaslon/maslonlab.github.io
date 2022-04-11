@@ -8,11 +8,11 @@ We will be using shell to do most of our work. Shell accepts and runs commands. 
 
 1) .bash_profile and .bashrc
 
-.bash_profile is read first and it calls the second file, .bashrc. This is done every time you log in and it initializes and customizes your environment. 
-.bash_profile file is where you can customize your environmental variable 
-below a typical bash profile which also adds a directory ‘bin’ to your path ($PATH described above). 
+`.bash_profile` is read first and it calls the second file, `.bashrc`. This is done every time you log in and it initializes and customizes your environment. 
+`.bash_profile` file is where you can customize your environmental variable 
+below a typical bash profile which also adds a directory `bin` to your path (`$PATH` described above). 
 
-```
+```bash
 # ~/.bash_profile: executed by bash(1) for login shells.
 # see /usr/share/doc/bash/examples/startup-files for examples.
 # the files are located in the bash-doc package.
@@ -31,7 +31,7 @@ if [ -d ~/bin ] ; then
 fi
 ```
 
-2) $PATH 
+2) `$PATH` 
 
 a variable `$PATH` is a set of directories (separated by `:` ) where the system assumes the executable programs are located. 
 
@@ -39,7 +39,7 @@ when you use an executable command in your script, the system will look into you
 
 to check what your path is you can use the following command:
 
-```
+```bash
 echo $PATH
 ```
 
@@ -48,6 +48,6 @@ echo $PATH
 it is a good idea to create a sub-directory `bin` in your home directory - this is a place to keep any scripts or programs you write, 
 or to add symlinks to some programs.  
 
-You should add bin to your bash profile [it is already done in the example above]
+You should add bin to your bash profile [it is already done in the example above].
 
 
