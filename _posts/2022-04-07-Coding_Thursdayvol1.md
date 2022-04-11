@@ -1,7 +1,7 @@
-
 ---
-title: "Bash profile"
-categories: [Coding Thursday]
+title: Bash profile
+date: 2022-04-07 
+categories: ["Coding Thursday"]
 ---
 
 We will be using shell to do most of our work. Shell accepts and runs commands. When you login, few files are read in to set up your environment. 
