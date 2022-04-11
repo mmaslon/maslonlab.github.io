@@ -33,9 +33,9 @@ fi
 
 2) $PATH 
 
-a variable $PATH is a set of directories (separated by “ :” ) where the system assumes the executable programs are located. 
+a variable `$PATH` is a set of directories (separated by “ :” ) where the system assumes the executable programs are located. 
 
-when you use an executable command in your script, the system will look into your $PATH to identify the executable code. 
+when you use an executable command in your script, the system will look into your `$PATH` to identify the executable code. 
 
 to check what your path is you can use the following command:
 
