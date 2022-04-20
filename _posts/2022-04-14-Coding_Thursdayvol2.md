@@ -2,6 +2,7 @@
 title: Downloading data from GEO to HPC.
 date: 2022-04-14 
 categories: ["Coding Thursday"]
+background: /assets/theme/images/geo.png
 ---
 
 Most, if not all (published) NGS data is deposited to GEO repository and available to download and process. Today the objective is to get the data of interest from GEO repository onto our HPC cluster accounts. 
