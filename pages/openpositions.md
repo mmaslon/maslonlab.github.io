@@ -8,6 +8,11 @@ We have number of positions available. If you are interested in joining the lab,
 
 Currently advertised:
 
+##### Lab manager position
+
+<iframe src="https://drive.google.com/file/d/1XiA-3RtIcYNJ5cyWIxB8mSp9wWKUZ3jY/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
+
+
 ##### PhD student position
 
 <iframe src="https://drive.google.com/file/d/1TigQdXk7uFDKflGPPBTO1Q0QdRiu6gJc/preview" width="640" height="480" allow="autoplay"></iframe>
