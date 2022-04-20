@@ -1,5 +1,6 @@
 ---
 title: Research
+background: /assets/theme/images/pol2.png
 permalink: /research/
 ---
 
