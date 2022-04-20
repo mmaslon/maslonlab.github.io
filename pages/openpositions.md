@@ -10,7 +10,7 @@ Currently advertised:
 
 ##### Lab manager position
 
-<iframe src="https://drive.google.com/file/d/1XiA-3RtIcYNJ5cyWIxB8mSp9wWKUZ3jY/view" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://docs.google.com/viewer?srcid=1XiA-3RtIcYNJ5cyWIxB8mSp9wWKUZ3jY&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="640" height="480" allow="autoplay"></iframe>
 
 
 ##### PhD student position
