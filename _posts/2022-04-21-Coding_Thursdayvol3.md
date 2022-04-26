@@ -2,7 +2,7 @@
 title: Accessing and downloading raw sequencing data.
 date: 2022-04-21 
 categories: ["Coding Thursday"]
-background: /assets/theme/images/geo.png
+background: /assets/theme/images/sra.png
 ---
 
 1. GEO does not store raw data.
