@@ -42,8 +42,8 @@ GSExxxxxx (GEO study) with many GSMxxxxxx samples is directly linked to SRPxxxxx
 The raw data can be found in the SRRxxxxxx accession (SRA run). 
 
 3. Downloading raw data for the given GEO accession.
-There are various ways to download sequencing data from SRA. ENA (on EBI) contains a mirror copy of SRA-stored data (www.ebi.ac.uk/ena). To downlaod raw data associated with GSE168378, I will use a SRA explorer tool, which creates scripts that enable downloading SRR accession from EBI. 
-- navigate to https://sra-explorer.info/ website
+There are various ways to download sequencing data from SRA. ENA (on EBI) contains a mirror copy of SRA-stored data [ENA](www.ebi.ac.uk/ena). To downlaod raw data associated with GSE168378, I will use a SRA explorer tool, which creates scripts that enable downloading SRR accession from EBI. 
+- navigate to [SRA-explorer](https://sra-explorer.info/) website
 - on GEO website, find SRA identifier for your GSE accession, SRPxxxxxx (here, for GSE168378 it is SRP309506) 
 - stick accession code to SRA explorer search box
 - tick samples you wish to download
