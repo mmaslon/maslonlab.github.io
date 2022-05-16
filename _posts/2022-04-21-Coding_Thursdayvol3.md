@@ -5,7 +5,7 @@ categories: ["Coding Thursday"]
 background: /assets/theme/images/sra.png
 ---
 
-1. GEO does not store raw data.
+GEO does not store raw data.
 As confusing as it seems, GEO does not store raw sequence data. Various formats of processed data are uploaded to GEO, including count tables etc. 
 
 For example, upon unpacking GSE168378 repository data downloaded last week:
