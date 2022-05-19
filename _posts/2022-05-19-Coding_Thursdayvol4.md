@@ -9,8 +9,8 @@ Let's pick it up where we left it last time. SRA explorer provides as with basic
 
 ```bash
 #!/bin/bash -l
-#SBATCH -N 1
-#SBATCH --mem 5000
+#SBATCH -N 2
+#SBATCH --mem 10000
 #SBATCH --time=20:00:00
 
 curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR138/053/SRR13866853/SRR13866853_1.fastq.gz -o SRR13866853_GSM5137583_LRNA_2i_2d_rep1_Mus_musculus_RNA-Seq_1.fastq.gz
