@@ -2,7 +2,7 @@
 title: Reads alignment.
 date: 2022-05-26 
 categories: ["Coding Thursday"]
-background: /assets/theme/images/sra.png
+background: /assets/theme/images/star.png
 ---
 
 Today, I will start the analysis of the data and align the pair-end reads to mm10 reference sequence using STAR.
