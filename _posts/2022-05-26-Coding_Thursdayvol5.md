@@ -1,5 +1,5 @@
 ---
-title: Reads alignment.
+title: Reads alignment
 date: 2022-05-26 
 categories: ["Coding Thursday"]
 background: /assets/theme/images/star.png
