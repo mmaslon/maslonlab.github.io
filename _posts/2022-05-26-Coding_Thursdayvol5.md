@@ -46,8 +46,8 @@ The following script is run to create indices:
 #SBATCH -o output_index.txt
 
 # source directories
-export TMPDIR=/home/users/mmaslon/grant_312/scratch/mmaslon
-export HOMEDIR=/home/users/mmaslon/grant_312/project_data/mmaslon
+export TMPDIR=/path/to/temporary-dir
+export HOMEDIR=/path/to/home-dir
 
 #load modules
 module load star/2.7.8a
