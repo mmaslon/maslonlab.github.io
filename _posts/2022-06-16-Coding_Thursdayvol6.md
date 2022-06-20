@@ -14,7 +14,7 @@ Shao et al. used ERCC spike-in RNAs as a reference for total and labeled RNA sam
 Therefore, in the first step of analysis I will align paired Illumina sequence reads against a reference genome as well as against spike-in sequences using STAR (Dobin et al., 2013). 
 I will mark duplicates (Picard) and index the genome BAM (Li et al., 2009). This is step is not essential, but can provide additional info on sample quality.
 
-```{bash}
+```bash
 #### Set temporary and home (results) directories
 export TMPDIR="/path/to/my/working_directory/"
 export HOMEDIR="/path/to/my/home_directory/"
