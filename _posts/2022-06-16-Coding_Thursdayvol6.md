@@ -2,7 +2,7 @@
 title: TT-seq analysis - Step 1
 date: 2022-06-16 
 categories: ["Coding Thursday"]
-background: /assets/theme/images/star.png
+background: /assets/theme/images/ttseq.png
 ---
 
 The data I have been working with are the result of TT-seq experiment performed by Shao et al., who set out to unravel how nascent transcription responds to cell state transitions. 
