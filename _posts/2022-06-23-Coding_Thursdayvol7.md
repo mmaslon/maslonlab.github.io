@@ -7,7 +7,7 @@ background: /assets/theme/images/ttseq.png
 
 In this post, I will normalize the sequencing samples, using the read counts from ERCC spike-ins. To this end I will generate scale factors, with the assumption that spike-ins are equally represented in each sample. Spike-in counts are stored in `*.ReadsPerGene.out.tab` files generated during samples alignment to spike-in sequences. 
 
-1. Creating count matrices
+* Creating count matrices
 
 ```bash
 library(dplyr)
@@ -52,7 +52,7 @@ write.table(spike_matrix_label, file="spikematrix_L.txt", row.names=TRUE, col.na
 write.table(spike_matrix_total, file="spikematrix_F.txt", row.names=TRUE, col.names=TRUE)
 ```
 
-2. Calculating scale factor using estimateSizeFactors() function in the DESeq2 package (Love et al.)
+* Calculating scale factor using estimateSizeFactors() function in the DESeq2 package (Love et al.)
 
 ```bash
 library(DESeq2)
@@ -174,6 +174,6 @@ sizeFactors(dds_F)
 ##       0.7051597       0.5022989       2.8893677
 ```
 
-3. References
+References:
 
 Love MI, Huber W, Anders S (2014). “Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2.” Genome Biology, 15, 550. doi: 10.1186/s13059-014-0550-8.
