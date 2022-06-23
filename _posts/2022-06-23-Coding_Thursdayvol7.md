@@ -54,7 +54,7 @@ write.table(spike_matrix_total, file="spikematrix_F.txt", row.names=TRUE, col.na
 
 2. Calculating scale factor using estimateSizeFactors() function in the DESeq2 package (Love et al.)
 
-```{r}
+```bash
 library(DESeq2)
 ## Loading required package: S4Vectors
 ## Loading required package: stats4
