@@ -9,7 +9,7 @@ In this post, I will normalize the sequencing samples, using the read counts fro
 
 1.Creating count matrices
 
-```{r}
+```bash
 library(dplyr)
 dirPath <- "/your/folder/with/*.ReadsPerGene.out.tab"
 setwd(dirPath)
