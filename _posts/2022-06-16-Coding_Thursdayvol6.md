@@ -11,7 +11,12 @@ In the next few posts, I will attempt to repeat Shao’s analysis.
 
 Shao et al. used ERCC spike-in RNAs as a reference for total and labeled RNA samples normalisation. Spike-ins are used to generate a scale-factor to account for differences in library size between multiple samples. 
 
-Therefore, in the first step of analysis I will align paired Illumina sequence reads against a reference genome (GRCm38) as well as against ERCC spike-in sequences (https://tools.thermofisher.com/content/sfs/manuals/cms_095047.txt) using STAR (Dobin et al., 2013). 
+Therefore, in the first step of analysis I will align paired Illumina sequence reads against a reference genome (GRCm38) as well as against ERCC spike-in sequences using STAR (Dobin et al., 2013). Spike-in fasta and annotation files were obtained from ThermoFisher website 
+
+```bash
+wget https://assets.thermofisher.com/TFS-Assets/LSG/manuals/ERCC92.zip
+```
+
 I will mark duplicates (Picard) and index the genome BAM (Li et al., 2009). This is step is not essential, but can provide additional info on sample quality.
 
 ```bash
