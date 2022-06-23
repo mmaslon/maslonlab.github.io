@@ -7,7 +7,7 @@ background: /assets/theme/images/ttseq.png
 
 In this post, I will normalize the sequencing samples, using the read counts from ERCC spike-ins. To this end I will generate scale factors, with the assumption that spike-ins are equally represented in each sample. Spike-in counts are stored in `*.ReadsPerGene.out.tab` files generated during samples alignment to spike-in sequences. 
 
-1.Creating count matrices
+1. Creating count matrices
 
 ```bash
 library(dplyr)
