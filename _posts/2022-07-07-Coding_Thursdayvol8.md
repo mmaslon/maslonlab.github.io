@@ -2,7 +2,7 @@
 title: TT-seq analysis - BigWig files
 date: 2022-07-07 
 categories: ["Coding Thursday"]
-background: /assets/theme/images/ttseq.png
+background: /assets/theme/images/igv.png
 ---
 
 In this post,  we will use previously calculated scale factors to create scale and strand-specific BigWig files. These files can be used to display data in the Genome Browser as a graph. 
