@@ -10,10 +10,10 @@ We will use SAMtools split the BAM files into reads mapping to the forward and r
 The following script can be called using:
 
 ```bash
-sbatch --export=S=scalefactor,F=.bam bigwig.sh
+sbatch script bamfile samplename scalefactor
 ```
 
-
+script.sh: 
 ```bash
 #!/bin/bash
 #SBATCH --job-name=alignment
