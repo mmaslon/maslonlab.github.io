@@ -5,7 +5,7 @@ categories: ["Coding Thursday"]
 background: /assets/theme/images/igv.png
 ---
 
-In this post, we will use R shiny application developed by Shao et al. (1), to annotate transcriptional units in the data. The code for this app is available at: ```https://github.com/shaorray/TU_filter```
+In this post, we will use R shiny application developed by Shao et al. (1), to annotate transcriptional units in the data. The code for this app is available at [TU_filter](https://github.com/shaorray/TU_filter)
 
 The app essentially performs the following steps:
 1) binning the genome into 200 bases bins,
@@ -14,7 +14,7 @@ The app essentially performs the following steps:
 4) join the resulting TUs by exons (coding regions), assume the rest as ncRNAs.
 
 Inputs:
-1) reference genome in gtf format - downloaded from gencode (`https://www.gencodegenes.org/mouse/release_M25.html`)
+1) reference genome in gtf format - here I used mm10 latest realeast from [gencode](`https://www.gencodegenes.org/mouse/release_M25.html`)
 2) bam files
 
 
