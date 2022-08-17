@@ -57,5 +57,6 @@ defaults:
       path: ""
     values:
       layout: "default"                 # Only required for Petridish website, implied for sites using a theme
+gems: [jekyll-paginate]
 paginate: 6
 paginate_path: "/page:num/"
