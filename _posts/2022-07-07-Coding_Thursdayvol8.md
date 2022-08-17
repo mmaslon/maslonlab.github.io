@@ -89,7 +89,12 @@ rm $BAMFOR $BAMFFOR1 $BAMFFOR2 $BAMREV $BAMREV1 $BAMREV2
 
 #### Copy data to home directory
 cp -R $BIGWIGDIR $HOMEDIR
+```
 
+Script has been adapted from Gregersen et al. (1).
+
+References:
+1. Using TTchem-seq for profiling nascent transcription and measuring transcript elongation. Lea H. Gregersen, Richard Mitter & Jesper Q. Svejstrup 
 
 
 
