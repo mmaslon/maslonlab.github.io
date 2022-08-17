@@ -13,7 +13,7 @@
 ],
 "years": [
     {%- for post in site.posts -%}
-    "{{ post.date | date: "%Y" }}"{% unless forloop.last %},{% endunless %}
+    "{{ post.date | date: "%M" }}"{% unless forloop.last %},{% endunless %}
     {%- endfor -%}
 ]
 }
