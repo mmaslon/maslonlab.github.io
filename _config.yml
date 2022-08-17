@@ -38,6 +38,12 @@ exclude:
   - package.json
   - petridish.gemspec
 
+jekyll-archives:
+  enabled: month
+  layout: archive
+  permalinks:
+    month: '/:year/:month/'
+
 # FRONTMATTER DEFAULTS
 defaults:
   -
