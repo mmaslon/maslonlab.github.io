@@ -11,10 +11,16 @@ description: Jekyll theme for research project websites # Site description in <h
 email: magmas6@amu.edu.pl          # Social icon in footer
 twitter_username: magdamaslon          # Social icon in footer
 
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
+
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 0                        # Show x number of latest posts on homepage, can be 0
 tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
-archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
+# archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
 # logo: /assets/theme/images/pol2.png # Logo in navbar, will be displayed with 30px height
 colors:
   links: "#6c6c93"                      # Color for links: use a readable color that contrasts well with dark text
