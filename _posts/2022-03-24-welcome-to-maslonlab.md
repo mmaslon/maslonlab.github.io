@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: Welcome to Maslon Lab
 date: 2022-03-24 
 categories: ["General"]
