@@ -27,7 +27,8 @@ markdown: kramdown
 plugins:                                # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
+gems:
+  - jekyll-paginate-v2
 exclude:
   - README.md
   - Gemfile
@@ -37,12 +38,25 @@ exclude:
   - package-lock.json
   - package.json
   - petridish.gemspec
+  
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
 
-#jekyll-archives:
-  #enabled: month
-  #layout: archive
-  #permalinks:
-   # month: '/:year/:month/'
+# Explicitly turn off the old code
+paginate: nil
+paginate_path: nil
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  offset: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
 
 # FRONTMATTER DEFAULTS
 defaults:
@@ -57,6 +71,3 @@ defaults:
       path: ""
     values:
       layout: "default"                 # Only required for Petridish website, implied for sites using a theme
-gems: [jekyll-paginate]
-paginate: 6
-paginate_path: "/blog/:num/"
