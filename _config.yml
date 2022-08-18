@@ -51,7 +51,7 @@ pagination:
   enabled: true
   per_page: 3
   offset: 2
-  permalink: '/page/:num/'
+  permalink: '/blog/:num/'
   title: ':title - page :num of :max'
   limit: 0
   sort_field: 'date'
