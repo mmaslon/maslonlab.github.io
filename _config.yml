@@ -1,11 +1,6 @@
 # SITE SETTINGS
 title: Maslon Lab homepage                        # Title in top navigation bar (navbar) and <head>
 description: Jekyll theme for research project websites # Site description in <head>
-# author: Peter Desmet                    # Used for copyright statement in footer
-# url: "https://peterdesmet.github.io"  # No slash at the end
-# baseurl: "/petridish"                 # Only required if your site is on a subdomain e.g. https://username.github.io/sitename
-                                        # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
-                                        # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/about/#links
 
 # SOCIAL PROFILES
 email: magmas6@amu.edu.pl          # Social icon in footer
@@ -14,7 +9,7 @@ twitter_username: magdamaslon          # Social icon in footer
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 0                        # Show x number of latest posts on homepage, can be 0
 tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
-archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
+# archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
 # logo: /assets/theme/images/pol2.png # Logo in navbar, will be displayed with 30px height
 colors:
   links: "#6c6c93"                      # Color for links: use a readable color that contrasts well with dark text
@@ -27,8 +22,7 @@ markdown: kramdown
 plugins:                                # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/
   - jekyll-feed
   - jekyll-sitemap
-gems:
-  - jekyll-paginate-v2
+
 exclude:
   - README.md
   - Gemfile
@@ -39,9 +33,9 @@ exclude:
   - package.json
   - petridish.gemspec
   
-# Produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
+
 paginate: 5
+paginate_path: /blog/page:num/
 
 # FRONTMATTER DEFAULTS
 defaults:
