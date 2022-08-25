@@ -17,7 +17,13 @@ Inputs:
 1) reference genome in gtf format - here I used mm10 latest realease from [gencode](https://www.gencodegenes.org/mouse/release_M25.html)
 2) bam files
 
+Output: 
+1) a graph with number of TUs per class
+
+/assets/theme/images/TU.png
+
+2) gff3 file with TU intervals
+
 
 References
-1. Distinct transcription kinetics of pluripotent cell states. Rui Shao, Banushree Kumar, Katja Lidschreiber, Michael Lidschreiber, Patrick Cramer, Simon J Elsässer.
-Molecular Systems Biology (2022)18:e10407
+1. Distinct transcription kinetics of pluripotent cell states. Rui Shao, Banushree Kumar, Katja Lidschreiber, Michael Lidschreiber, Patrick Cramer, Simon J Elsässer. Molecular Systems Biology (2022)18:e10407
