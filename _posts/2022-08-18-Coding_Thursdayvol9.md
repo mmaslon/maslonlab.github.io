@@ -10,7 +10,7 @@ In this post, we will use R shiny application developed by Shao et al. (1), to a
 The app essentially performs the following steps:\
 1) binning the genome into 200 bases bins,\
 2) calculate the strand-specific coverage,\
-3) divide genome into “transcribed” (transcription units, ThUs) and “not-transcribed” regions using GenoSTAN package,\ 
+3) divide genome into “transcribed” (transcription units, ThUs) and “not-transcribed” regions using GenoSTAN package,\
 4) join the resulting TUs by exons (coding regions), assume the rest as ncRNAs.
 
 Inputs:\  
