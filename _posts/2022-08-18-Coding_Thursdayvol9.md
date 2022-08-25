@@ -24,6 +24,5 @@ Output:
 
 2) gff3 file with TU intervals
 
-
 References
 1. Distinct transcription kinetics of pluripotent cell states. Rui Shao, Banushree Kumar, Katja Lidschreiber, Michael Lidschreiber, Patrick Cramer, Simon J Elsässer. Molecular Systems Biology (2022)18:e10407
