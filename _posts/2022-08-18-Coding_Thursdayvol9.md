@@ -20,7 +20,7 @@ Inputs:
 Output: 
 1) a graph with number of TUs per class
 
-/assets/theme/images/TU.png
+![TUs per class][^2](/assets/theme/images/TU.png)
 
 2) gff3 file with TU intervals
 
