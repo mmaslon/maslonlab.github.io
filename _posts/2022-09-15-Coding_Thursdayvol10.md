@@ -51,14 +51,12 @@ Mate 1 can now be used to create sense and anti-sense profiles.
 #!/bin/bash
 #call script as: script.sh samplename
 
-export WORKDIR=/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/
+export WORKDIR=/pathtoworkdir/
 PROFDIR="${WORKDIR}metaprofiles/"
-export HOMEDIR=/home/users/mmaslon/grant_312/project_data/mmaslon/star_final/
 mkdir -p $PROFDIR
 
 THREADS=1
 SAMPLE=$1
-#3MATE1REHEADER="${WORKDIR}${SAMPLE}.mate1.reheader.bam"
 BAM="${WORKDIR}${SAMPLE}.bam"
 
 REGION="tss"
