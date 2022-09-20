@@ -2,7 +2,7 @@
 title: TT-seq analysis - Metagene profiles
 date: 2022-09-15
 categories: ["Coding Thursday"]
-background: /assets/theme/images/igv.png
+background: /assets/theme/images/profile.png
 ---
 
 In this post, I will use ngs.plot to visualize the results of TT-seq experiment around functional genomic regions, i.e. transcription start site (TSS) and transcription end site (TES).
