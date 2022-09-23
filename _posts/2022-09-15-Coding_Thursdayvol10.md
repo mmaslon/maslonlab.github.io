@@ -82,6 +82,8 @@ done
 
 ```
 
+As a result, you will get pdf files with profiles for sense, antisense, and both strands on seperate graphs as well as zipped files with the txt files with data used for drawing the profiles. These files can be used to re-draw the profiles, e.g. drawing sense and antisense coverage on the same plot (see the upcoming blog post). 
+
 
 
 
