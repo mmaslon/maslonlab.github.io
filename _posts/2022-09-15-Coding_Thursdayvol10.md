@@ -85,7 +85,7 @@ done
 As a result, you will get pdf files with profiles for sense, antisense, and both strands on seperate graphs, e.g.:
 
 <p align="center">
-![](https://github.com/mmaslon/maslonlab.github.io/blob/dde46f5613c18a8ad9cb85b953ae9ed52482df19/assets/theme/images/genebody.same.avgprof.png "sense strand profile over gene body")
+<img src="/assets/theme/images/genebody.same.avgprof.png" title="sense strand profile over gene body"/>
     
 as well as zipped files with the txt files with data used for drawing the profiles. 
 
