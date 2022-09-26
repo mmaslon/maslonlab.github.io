@@ -107,7 +107,8 @@ plot_grid(p1, p3, p2, nrow = 3, labels = LETTERS[1:3])
 ```
 The above code results in the following image:
 
-
+<p align="center">
+<img src="/assets/theme/images/metaprofiles2.png" title="metaprofiles"/>
 
 
 ```r
