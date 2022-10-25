@@ -22,7 +22,7 @@ theme_update(panel.grid.minor.x = element_blank(),
 
 ```
 
-1. Create functions, that aggregate results from different ngs runs. \
+1. Create functions, that aggregate results from different ngs runs. 
 2. The purpose of this code is to create a big table with data for sense, both or anti-sense strands over TSS, TES and genebody. I used mostly code from this [blog](https://jdblischak.github.io/singleCellSeq/analysis/ngsplot-endogenous.html), but since part of their code was not functional (in my R session at least), I made the required updates.
 
 ```r
@@ -79,7 +79,7 @@ import_data <- function(path, datatype, id) {
 }
 ```
 
-2. Importa the data from specified location, using functions above:
+3. Import the data from specified location, using functions above:
 
 ```r
 cov <- import_ngsplot(results = c("/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.tss.both","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.genebody.both","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.tes.both","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.tss.same","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.genebody.same","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.tes.same","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.tss.opposite","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.genebody.opposite","/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams/metaprofiles/LRNA_2i_7d_rep1.mate1.reheader.tes.opposite"),id = c("tss-both", "genebody-both", "tes-both","tss-same", "genebody-same", "tes-same","tss-opposite","genebody-opposite","tes-opposite"))
@@ -88,7 +88,7 @@ cov <- import_ngsplot(results = c("/Users/mmaslon/Documents/jobs/poznan/analysis
 cov <- separate(cov, "id", into = c("feature", "strand"), sep = "-")
 cov$id <- factor(cov$feature, levels = c("tss", "genebody", "tes"))
 ```
-3. Draw plots (my own code, but code in the above mentioned blog works very nicely too).
+4. Draw plots (my own code, but code in the above mentioned blog works very nicely too).
 
 ```r
 p1<-ggplot(cov[cov$feature == "tss", ],aes(x=position,y=avgprof))+geom_line(aes(color = strand, linetype = strand)) + scale_x_continuous(breaks = c(0, 25, 50, 75, 100),
@@ -111,10 +111,9 @@ The above code results in the following image:
 <img src="/assets/theme/images/metaprofiles2.png" title="metaprofiles"/>
 
 
-```r
+```{r}
 sessionInfo()
-```
-```
+
 R version 4.0.3 (2020-10-10)
 Platform: x86_64-apple-darwin17.0 (64-bit)
 Running under: macOS  12.5.1
