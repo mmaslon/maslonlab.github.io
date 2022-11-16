@@ -13,7 +13,7 @@
 
 - name: Bogna Juskowiak
   role: Lab Manager # Will appear next to name
-  image: assets/theme/images/bogna.jpeg # Can be external link
+  image: assets/theme/images/bogna.jpg # Can be external link
   description: > # Can be Markdown
    Bogna received her MSc degree in medical biotechnology from Poznan University of Medical Sciences. During her master thesis research, she worked on the use of bioengineered silk in 
    cancer drug delivery. Next she joined the group of Rafal Ciosk at Institute of Bioorganic Chemistry, where she studied the molecular mechanism of mRNA 
