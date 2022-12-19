@@ -177,6 +177,6 @@ ggsave(filename = "Fig1.Spliced_ratio_sample.pdf", path = "/Users/mmaslon/Docume
 The code results in the following plot:
 
 <p align="center">
-<img src="/assets/theme/images/splicing.pdf" title="splicing ratio"/>
+<img src="/assets/theme/images/Fig1.Spliced_ratio_sample.pdf" title="splicing ratio"/>
 
 
