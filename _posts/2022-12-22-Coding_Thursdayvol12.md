@@ -19,7 +19,7 @@ The second view statement converts the output back to bam format.
 
 To measure spliced reads in TT-seq I then followed Shao's [script](https://github.com/shaorray/TT-seq_mESC_pluripotency/blob/master/fig1/Fig1_spliced_fraction.R) with slight modifications:
 
-```{r}
+```r
 setwd("your/working/dir")
 source("dir/with/shaos/utils.R")
 pacman::p_load(Rsubread, org.Mm.eg.db, TxDb.Mmusculus.UCSC.mm10.knownGene)
@@ -42,7 +42,7 @@ gene.ann <- gene.ann[!is.na(gene.ann$GeneID), ]
 
 Next, get sample sizes method. I used deseq2
 
-```{r}
+```r
 library(DESeq2)
 #read in the file previously created for spike counts
 spike_matrix_label=read.table(spike_matrix_label, file="spikematrix_L.txt", row.names=TRUE, col.names=TRUE)
@@ -60,7 +60,7 @@ LRNA.sizefactor<-sizeFactors(dds_L)
 
 Count total and spliced reads
 
-```{r}
+```r
 # count total reads
 bam_files <- list.files("/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams", pattern = ".bam$", full.names = T)
 fc_PE <- Rsubread::featureCounts(bam_files, annot.ext=gene.ann, isPairedEnd=TRUE)
@@ -121,7 +121,7 @@ write.table(cellCountsmine, "working/dir/Splicing_cell_number.txt",
 
 Statistical tests and plotting
 
-```{r}
+```r
 spliced_ratio2 <- spliced_ratio[, !grepl("2i_7d", colnames(spliced_ratio))]
 spliced_ratio_mean <- sapply(c("2i_2d", "SL"), 
                              function(x) rowMeans(spliced_ratio2[, grep(x, colnames(spliced_ratio2))])) %>%
@@ -176,6 +176,7 @@ ggsave(filename = "Fig1.Spliced_ratio_sample.pdf", path = "/Users/mmaslon/Docume
 
 The code results in the following plot:
 
-
+<p align="center">
+<img src="/assets/theme/images/splicing.png" title="splicing ratio"/>
 
 
