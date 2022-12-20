@@ -62,7 +62,7 @@ Count total and spliced reads
 
 ```r
 # count total reads
-bam_files <- list.files("/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/bams", pattern = ".bam$", full.names = T)
+bam_files <- list.files("/your/working/dir/bams", pattern = ".bam$", full.names = T)
 fc_PE <- Rsubread::featureCounts(bam_files, annot.ext=gene.ann, isPairedEnd=TRUE)
 
 #size factor required here
@@ -71,7 +71,7 @@ readCounts<-fc_PE$counts
 readCounts_scaled<-sweep(readCounts, 2, LRNA.sizefactor, '/')
 
 # count spliced reads
-spliced_bam_files <- list.files("/Users/mmaslon/Documents/jobs/poznan/analysis/TUannotation/spliced/", pattern = ".bam$", full.names = T)  
+spliced_bam_files <- list.files("/your/working/dir//spliced/", pattern = ".bam$", full.names = T)  
 fc_PE_spliced <- Rsubread::featureCounts(spliced_bam_files, annot.ext=gene.ann, isPairedEnd=TRUE)
 
 #size factor required here
@@ -115,7 +115,7 @@ cellCountsmine$Spliced_sd <- colSds(spliced_ratio)[match(cellCountsmine$Samples,
 cellCountsmine$Spliced_mean <-  colMeans(spliced_ratio)[match(cellCountsmine$Samples, colnames(spliced_ratio))] 
 cellCountsmine$Color <- gsub("(.*)\\_rep.*", "\\1", cellCountsmine$Samples)
 
-write.table(cellCountsmine, "working/dir/Splicing_cell_number.txt",
+write.table(cellCountsmine, "/your/working/dir/Splicing_cell_number.txt",
             quote = F, row.names = F, col.names = T, sep = "\t")
 ```
 
@@ -130,47 +130,34 @@ colMedians(as.matrix(spliced_ratio_mean))
 colMeans(as.matrix(spliced_ratio_mean))
 
 plot(density(log(spliced_ratio_mean$`2i_2d`/ spliced_ratio_mean$SL), na.rm = T))
-#plot(density(log(spliced_ratio_mean$mTORi_1d / spliced_ratio_mean$SL), na.rm = T))
-#plot(density(log(spliced_ratio_mean$mTORi_2d / spliced_ratio_mean$SL), na.rm = T))
 
-median(na.omit((spliced_ratio_mean$`2i_2d` / spliced_ratio_mean$SL))) # 0.9614648 [me 1] 0.9686969
-#median(inf.omit(na.omit((spliced_ratio_mean$mTORi_1d / spliced_ratio_mean$SL)))) # 0.7608696
-#median(inf.omit(na.omit((spliced_ratio_mean$mTORi_2d / spliced_ratio[, "SL_rep3"])))) # 1.100866
+median(na.omit((spliced_ratio_mean$`2i_2d` / spliced_ratio_mean$SL))) # 0.9686969
 
 inf.omit = function(x) x[is.infinite(x)]
-#remove 0
 ##Go through each row and determine if a value is zero
 row_sub = apply(spliced_ratio_mean, 1, function(row) all(row !=0 ))
 ##Subset as usual
 spliced_ratio_mean=spliced_ratio_mean[row_sub,]
 t.test(na.omit( log2(spliced_ratio_mean$SL / spliced_ratio_mean$`2i_2d`))) # p-value < 2.2e-16
-#t.test(inf.omit(na.omit( log2(spliced_ratio_mean$SL / spliced_ratio_mean$mTORi_1d)))) # p-value < 2.2e-16
-#t.test(inf.omit(na.omit( log2(spliced_ratio_mean$SL / spliced_ratio_mean$mTORi_2d)))) # p-value < 2.2e-16
 
 MASS::glm.nb(SL ~ `2i_2d`, data = spliced_ratio_mean) %>% summary()
-MASS::glm.nb(SL ~ mTORi_1d, data = spliced_ratio_mean) %>% summary()
-MASS::glm.nb(SL ~ mTORi_2d, data = spliced_ratio_mean) %>% summary()
 
 # --------------------------------------------------------------------------------------------
-cellCounts <- read.table("/Users/mmaslon/Documents/jobs/poznan/analysis/Splicing_cell_number.txt", header = T)
-#cellCountsmine$Color <- factor(cellCountsmine$Color, c("SL", "2i_2d"))
+cellCounts <- read.table("/your/working/dir/Splicing_cell_number.txt", header = T)
 cellCounts$Samples <- factor(cellCounts$Samples, unique(cellCounts$Samples))
 
 # plot
 ggplot(cellCounts, aes(x = Samples, y = Spliced * 100, fill = Color)) + 
   geom_bar(stat = "identity") +
-  # geom_point(cex = 3, pch = 15) + 
   geom_linerange(aes(ymin=Spliced_lower * 100, ymax=Spliced_upper * 100)) +
-  # xlab("\nCell density (million / cm2)") +
   xlab("") +
   ylab("Spliced %\n") +
   ylim(0, 20) +
-  #scale_fill_manual(values = colors_20[c(13, 2, 20, 7)]) +
   labs(fill='Samples') +
   theme_setting +
   theme(axis.text.x = element_text(size = 11, angle = 45, hjust=1))
 
-ggsave(filename = "Fig1.Spliced_ratio_sample.pdf", path = "/Users/mmaslon/Documents/jobs/poznan/analysis/", device = "pdf",
+ggsave(filename = "splicing.pdf", path = "/your/working/dir/analysis/", device = "pdf",
        width = 5, height = 4)
 ```
 
