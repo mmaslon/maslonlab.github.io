@@ -2,7 +2,7 @@
 title: TT-seq analysis -Spliced reads 
 date: 2022-12-20
 categories: ["Coding Thursday"]
-background: /assets/theme/images/metaprofiles2.png
+background: /assets/theme/images//ttseq.png
 ---
 
 In this post, I will continue with reproducing the analysis from Shao et al and compare spliced reads across various 4sU labelled samples. The assumption is that in the short metabolic labelling experiments, the majority of reads should come from unspliced pre-mRNAs.
