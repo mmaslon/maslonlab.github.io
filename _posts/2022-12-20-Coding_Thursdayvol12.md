@@ -1,6 +1,6 @@
 ---
 title: TT-seq analysis -Spliced reads 
-date: 2022-12-22
+date: 2022-12-20
 categories: ["Coding Thursday"]
 background: /assets/theme/images/metaprofiles2.png
 ---
