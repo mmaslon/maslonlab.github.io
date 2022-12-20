@@ -4,7 +4,7 @@
   role: Group Leader # Will appear next to name
   image: assets/theme/images/bio.jpeg # Can be external link
   description: > # Can be Markdown
-    Magda is an experimental biologists and a budding bioinformatician. She graduated from Jagiellonian University. She then did her PhD studies in cancer biology. 
+    Magda is an experimental biologist and a budding bioinformatician. She graduated from Jagiellonian University. She then did her PhD studies in cancer biology. 
     In her last post, she was a postdoc at the Caceres Lab at the University of Edinburgh. Having received funding from NCN and NAWA, she moved to Poznan
     to set up her own lab.
     Runner, climber and a mum in her spare time.
@@ -22,4 +22,15 @@
    She loves dogs, food and exploring new cultures.
   twitter: 
   email: bogna.juskowiak@amu.edu.pl
+  
+  
+- name: Ola Kazmierczak
+  role: Master student # Will appear next to name
+  image: assets/theme/images/ola.jpg # Can be external link
+  description: > # Can be Markdown
+   Ola is an MSc biotechnology student at the Adam Mickiewicz University. She did her bachelor thesis on "The involvement of the protein import machinery in the course of Parkinson's disease". 
+   Recently, she joined Maslon group to do her master thesis. She will develop and characterize a cellular model of RNA polymerase II with increased elongation rate. 
+   During her free time, she likes to explore new places by travelling to various countries and photography landscapes.
+  twitter: 
+  email: alekaz9@st.amu.edu.pl
 
