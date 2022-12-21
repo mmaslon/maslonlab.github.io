@@ -5,7 +5,7 @@ categories: ["Coding Thursday"]
 background: /assets/theme/images//ttseq.png
 ---
 
-In this post, I will continue with reproducing the analysis from Shao et al and compare spliced reads across various 4sU labelled samples. The assumption is that in the short metabolic labelling experiments, the majority of reads should come from unspliced pre-mRNAs.
+In this post, I will continue with reproducing the analysis from [Shao et al](https://www.embopress.org/doi/full/10.15252/msb.202110407) and compare spliced reads across various 4sU labelled samples. The assumption is that in the short metabolic labelling experiments, the majority of reads should come from unspliced pre-mRNAs.
 
 In order to extract spliced reads from the data, we will extract information in the 6th column of sam file (the CIGAR string) - see code below. The CIGAR string provides information on how your reads align to the reference sequence. Gaps in the alignments (indicative of splicing) are indicated as “N” in the CIGAR string. I refer you to the following blog for a really clear information on the [CIGAR](https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/) 
 
@@ -40,7 +40,7 @@ gene.ann <- data.frame(GeneID = res$ENSEMBL[match(gene.gr$gene_id, res$ENTREZID)
 gene.ann <- gene.ann[!is.na(gene.ann$GeneID), ]
 ```
 
-Next, get sample sizes method. I used deseq2
+Next, get sample sizes method. I used DESeq2 (2)
 
 ```r
 library(DESeq2)
@@ -166,4 +166,7 @@ The code results in the following plot:
 <p align="center">
 <img src="/assets/theme/images/splicing.png" title="splicing ratio"/>
 
-
+References:
+1) Distinct transcription kinetics of pluripotent cell states
+Rui Shao, Banushree Kumar, Katja Lidschreiber, Michael Lidschreiber, Patrick Cramer, Simon J Elsässer
+Molecular Systems Biology (2022)18:e10407
