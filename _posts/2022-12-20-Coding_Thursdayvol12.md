@@ -40,7 +40,7 @@ gene.ann <- data.frame(GeneID = res$ENSEMBL[match(gene.gr$gene_id, res$ENTREZID)
 gene.ann <- gene.ann[!is.na(gene.ann$GeneID), ]
 ```
 
-Next, get sample sizes method. I used DESeq2 (2)
+Next, get sample sizes method. I used [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 
 ```r
 library(DESeq2)
@@ -167,6 +167,6 @@ The code results in the following plot:
 <img src="/assets/theme/images/splicing.png" title="splicing ratio"/>
 
 References:
-1) Distinct transcription kinetics of pluripotent cell states
-Rui Shao, Banushree Kumar, Katja Lidschreiber, Michael Lidschreiber, Patrick Cramer, Simon J Elsässer
-Molecular Systems Biology (2022)18:e10407
+1) Shao R, Kumar B, Lidschreiber K, Lidschreiber M, Cramer P, Elsässer SJ (2022). "Distinct transcription kinetics of pluripotent cell states."
+   Molecular Systems Biology (2022)18:e10407
+2) Love MI, Huber W, Anders S (2014). “Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2.” Genome Biology, 15, 550
