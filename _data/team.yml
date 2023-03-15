@@ -38,6 +38,7 @@
 - name: Vikas Patel
   role: Postdoc # Will appear next to name
   image: assets/theme/images/Vikas.jpg # Can be external link
+  description: > # Can be Markdown
     Vikas received his PhD in Medical and Health Science from the University of Debrecen, Hungary, in 2022, where he studied the molecular background of therapy resistance in human melanoma. 
     As a postdoctoral researcher, he is currently investigating how deregulated transcription rates affect brain development. In his spare time, he enjoys cooking and going for nature walks
   twitter: 
