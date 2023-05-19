@@ -7,9 +7,9 @@ background: /assets/theme/images//as.png
 In this and next few posts, I will log my attempt to replace shell scripting (which I have been using so far for the analysis) with a more 
 reliable way to produce scientific worklows, i.e. [Snakemake](https://snakemake.readthedocs.io/en/stable/) [1].
 
-Snakemake is used to create workflows composed of set of steps (rules) that use some input files to create output files. To learn more about Snakemake and start using it, please navigate to: [Snakemake_installation page] (https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
+Snakemake is used to create workflows composed of set of steps (rules) that use some input files to create output files. To learn more about Snakemake and start using it, please navigate to: [Snakemake_installation page](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html)
 
-A recommended way to install Snakemake is via Conda/Mamba. Again, I used info on [Snakemake_installation page] (https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) and this [Biostars post](https://www.biostars.org/p/335903/) as a guideline.
+A recommended way to install Snakemake is via Conda/Mamba. Again, I used info on [Snakemake_installation page](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) and this [Biostars post](https://www.biostars.org/p/335903/) as a guideline.
 
 I am going to use data from the recently published paper on elongation rate changes in ageing [2]. This paper finds that RNAPII "speeds up" as we age, and life extending interventions, such as dietary restriction or decrease in IGF-1 signaling (knockout of Irs1 gene) can reverse it. Various groups, includin my work have previously showed that changing RNAPII elongation rate affects RNA processing, including splicing. I want to analyze RNAseq data from aged wild type or Irs1 KO mice and look at the Alternative Splicing (AS) changes. 
 
