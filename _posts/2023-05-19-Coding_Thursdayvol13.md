@@ -113,6 +113,19 @@ rule analysesplicing:
        "mkdir -p {params.tmp}; "
        "rmats.py --b1 {input.b1} --b2 {input.b2} --gtf {input.gtf} -t single --variable-read-length --readLength 100 --libType fr-firststrand --od {params.outdir} --tmp {params.tmp}"
 ```
+6. check that the rules are OK by doing a dry run:
 
+```
+snakemake --np
+```
+7. run your workflow
+
+```
+snakemake --cores 2 --use-conda
+```
+
+Please check what we learnt about AS changes in next post. 
+
+References:
 1. Mölder, F., Jablonski, K.P., Letcher, B., Hall, M.B., Tomkins-Tinch, C.H., Sochat, V., Forster, J., Lee, S., Twardziok, S.O., Kanitz, A., Wilm, A., Holtgrewe, M., Rahmann, S., Nahnsen, S., Köster, J., 2021. Sustainable data analysis with Snakemake. F1000Res 10, 33.
 2. Debès, C., Papadakis, A., Grönke, S. et al. Ageing-associated changes in transcriptional elongation influence longevity. Nature 616, 814–821 (2023).
