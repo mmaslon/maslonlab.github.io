@@ -48,7 +48,20 @@ conda activate rna
 ```
 conda install snakemake
 ```
-5. I prepared few files first to run my workflow `config.json` (path to reads, genome files), `wt.txt` and `ko.txt` (list of bam files for splicing analysis)
+5. I prepared few files first to run my workflow 
+
+`config.json` - path to reads, genome files):
+
+```
+{
+    "data": "rnaseq/reads",
+    "genome": "rnaseq/genome",
+}
+```
+
+`wt.txt` and `ko.txt` (list of bam files for splicing analysis)
+
+
 
 ```bash
 configfile:
