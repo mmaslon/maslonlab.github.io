@@ -50,7 +50,7 @@ conda install snakemake
 ```
 5. I prepared few files first to run my workflow `config.json` (path to reads, genome files), `wt.txt` and `ko.txt` (list of bam files for splicing analysis)
 
-```
+```bash
 configfile:
     "config.json"
 
