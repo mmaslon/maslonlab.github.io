@@ -89,8 +89,6 @@ rule align:
         'rnaseq/star/{sample}_Log.final.out'
     message:
         'mapping {wildcards.sample} to genome'
-    conda:
-        "env.yaml"
     shell:
         "mkdir -p {params.outdir}; "
         "cd {params.outdir}; "
@@ -106,8 +104,6 @@ rule analysesplicing:
     params:
         outdir = directory('rnaseq/rmats2'),
         tmp = directory('rnaseq/rmats2/tmp')
-    conda:
-       "/Users/magdamaslon/Documents/Magdypliki/analysis/env.yml"
     shell:
        "mkdir -p {params.outdir}; "
        "mkdir -p {params.tmp}; "
