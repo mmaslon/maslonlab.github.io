@@ -40,7 +40,7 @@ conda env create -f env.yml
 conda env list
 ```
 
-4. Next, I activate my environment calls `rna` and installed Snakemake within that environemt. 
+4. Next, I activate my environment called `rna` and installed Snakemake within that environemt. 
 
 ```
 conda activate rna
