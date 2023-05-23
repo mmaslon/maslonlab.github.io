@@ -107,12 +107,12 @@ configfile:
     "config.json"
 
 SAMPLES, = glob_wildcards(config['data']+"/{id}.fastq.gz")
-EVENTS = ["A3SS", "A5SS", "MXE", "RI", "SE"]
-JCS = ["JC", "JCEC"]
-b1 = "rnaseq/star/ko.txt"
-b2 = "rnaseq/star/wt.txt"
-BAM_FILES = expand("rnaseq/star/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLES)
-AS_FILES = expand("rnaseq/rmats2/{event}.MATS.{jc}.txt", event = EVENTS, jc = JCS)
+EVENTS = ["A3SS", "A5SS", "MXE", "RI", "SE"]. #used for rMats output
+JCS = ["JC", "JCEC"] #used for rMats output
+b1 = "rnaseq/star/ko.txt" #used for rMats input, list of sample 1 bams, i.e. KO
+b2 = "rnaseq/star/wt.txt" #used for rMats input, list of sample 2 bams, i.e. WT
+BAM_FILES = expand("rnaseq/star/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLES). #star output files
+AS_FILES = expand("rnaseq/rmats2/{event}.MATS.{jc}.txt", event = EVENTS, jc = JCS) #rMats output files
 
 rule all:
     input:
@@ -136,7 +136,7 @@ rule index_genome:
 
 rule align:
     input:
-        read = config['data']+"/{sample}_1.fastq.gz", 
+        read = config['data']+"/{sample}.fastq.gz", 
         genome = directory('rnaseq/genome/index/')
     params:
         prefix = 'rnaseq/star/{sample}_'
