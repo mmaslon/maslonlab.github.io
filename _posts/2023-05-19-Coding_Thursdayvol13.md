@@ -108,13 +108,17 @@ configfile:
 SAMPLES, = glob_wildcards(config['data']+"/{id}.fastq.gz")
 EVENTS = ["A3SS", "A5SS", "MXE", "RI", "SE"]
 JCS = ["JC", "JCEC"]
+b1 = "rnaseq/star/ko.txt"
+b2 = "rnaseq/star/wt.txt"
 BAM_FILES = expand("rnaseq/star/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLES)
 AS_FILES = expand("rnaseq/rmats2/{event}.MATS.{jc}.txt", event = EVENTS, jc = JCS)
 
 rule all:
     input:
         AS_FILES,
-        BAM_FILES
+        BAM_FILES,
+	b1,
+	b2
 
 rule index_genome:
     input:
@@ -144,6 +148,15 @@ rule align:
         "mkdir -p {params.outdir}; "
         "cd {params.outdir}; "
         "STAR --runThreadN 4 --genomeDir {input.genome} --readFilesIn {input.read} --readFilesCommand gunzip -c --outFileNamePrefix {params.prefix} --outSAMtype BAM SortedByCoordinate --outSAMattributes Standard --alignEndsType EndToEnd"
+
+rule make_files:
+    input:
+        dirs = directory('rnaseq/star')
+    output:
+        b1,
+        b2
+    script:
+        "group_files.py"
 
 rule analysesplicing:
     input:
