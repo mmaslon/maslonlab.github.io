@@ -56,21 +56,22 @@ conda install snakemake
     "genome": "rnaseq/genome",
 }
 ```
-Within my Snakefile, I will also run a python script, that will create two text files with paths to BAM files for two samples I wish to compare using rMATS (i.e. one text file with paths to BAM files for wt samples and one txt file with paths tp BAM files for IRS-KO samples). 
+Within my Snakefile, I will also run a python script, that will create two text files with paths to BAM files for two samples I wish to compare using rMATS (i.e. one text file with paths to BAM files for wt samples and one txt file with paths tp BAM files for IRS-KO samples). Scripts inside Snakefile rules have access to the same objects as snakefiles itself.
 
 ```python
 import os
 
 def make_files(data_path, out1, out2):  
-    # python code
-	#store files in the list
+    #store files in the list
     files = []
-    substring = "IRS"
-
+    substring = "IRS" #to use the BAM files names to be able to differentite between WT and KO samples
+   
+   #populated files with all bam files
     for file in os.listdir(data_path):
         if file.endswith("Aligned.sortedByCoord.out.bam"):
-            files.append(file)
+            files.append(file) 
             print(file) #sanity check
+	    
     dictionary = {}  
     for file in files:
         if substring in file:  
@@ -96,7 +97,7 @@ def make_files(data_path, out1, out2):
                 print(key)
                 f.close
 
-make_files(snakemake.input[0], snakemake.output[0], snakemake.output[1])
+make_files(snakemake.input[0], snakemake.output[0], snakemake.output[1]). #in the rule that executes the script, I will define the folder with bam files as the input, and final output files as two outputs
 ```
 
 6. Snakefile:
