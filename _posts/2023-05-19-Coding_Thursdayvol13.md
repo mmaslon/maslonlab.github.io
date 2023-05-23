@@ -58,7 +58,7 @@ conda install snakemake
 ```
 Within my Snakefile, I will also run a python script, that will create two text files with paths to BAM files for two samples I wish to compare using rMATS (i.e. one text file with paths to BAM files for wt samples and one txt file with paths tp BAM files for IRS-KO samples). 
 
-```
+```python
 import os
 
 def make_files(data_path, out1, out2):
