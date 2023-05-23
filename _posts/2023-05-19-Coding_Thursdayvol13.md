@@ -61,7 +61,7 @@ Within my Snakefile, I will also run a python script, that will create two text 
 ```python
 import os
 
-def make_files(data_path, out1, out2):
+def make_files(data_path, out1, out2):  
     # python code
 	#store files in the list
     files = []
