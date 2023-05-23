@@ -48,9 +48,7 @@ conda activate rna
 ```
 conda install snakemake
 ```
-5. I prepared few files first to run my workflow: 
-
-`config.json` with path to reads and genome files:
+5. I prepared a `config.json` file with path to reads and genome files:
 
 ```
 {
@@ -58,8 +56,48 @@ conda install snakemake
     "genome": "rnaseq/genome",
 }
 ```
+Within my Snakefile, I will also run a python script, that will create two text files with paths to BAM files for two samples I wish to compare using rMATS (i.e. one text file with paths to BAM files for wt samples and one txt file with paths tp BAM files for IRS-KO samples). 
 
-`wt.txt` and `ko.txt` containing list of bam files for splicing analysis 
+```
+import os
+
+def make_files(data_path, out1, out2):
+    # python code
+	#store files in the list
+    files = []
+    substring = "IRS"
+
+    for file in os.listdir(data_path):
+        if file.endswith("Aligned.sortedByCoord.out.bam"):
+            files.append(file)
+            print(file) #sanity check
+    dictionary = {}  
+    for file in files:
+        if substring in file:  
+            key = "ko"
+            group = dictionary.get(key,[])
+            group.append(file)  
+            dictionary[key] = group
+        else:
+            key = "wt"
+            group = dictionary.get(key,[])
+            group.append(file)  
+            dictionary[key] = group
+
+    for key in dictionary.keys():
+        print(key)
+        if key == "wt":
+            with open (out2, 'w') as f:
+                f.write((str(dictionary[key])[1:-1]).replace(" ", "").replace("'","")) #slice brackets
+                f.close
+        else:
+            with open (out1, 'w') as f:
+                f.write((str(dictionary[key])[1:-1]).replace(" ", "").replace("'","")) #slice brackets
+                print(key)
+                f.close
+
+make_files(snakemake.input[0], snakemake.output[0], snakemake.output[1])
+```
 
 6. Snakefile:
 
