@@ -1,6 +1,6 @@
 ---
 title: Processing rMATS output 
-date: 2023-05-18
+date: 2023-05-25
 categories: ["Coding Thursday"]
 background: /assets/theme/images//as.png
 ---
