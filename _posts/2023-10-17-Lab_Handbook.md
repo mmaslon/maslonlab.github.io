@@ -1,7 +1,7 @@
 ---
 title: LAB HANDBOOK
 date: 2023-10-17
-categories: ["Housekeeping"]
+categories: ["General"]
 background: /assets/theme/images/czt.png
 ---
 
