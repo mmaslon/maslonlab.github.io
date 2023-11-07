@@ -23,18 +23,6 @@
   twitter: 
   email: bogna.juskowiak@amu.edu.pl
   
-  
-- name: Ola Kazmierczak
-  role: Master student # Will appear next to name
-  image: assets/theme/images/ola.jpg # Can be external link
-  description: > # Can be Markdown
-   Ola is an MSc biotechnology student at the Adam Mickiewicz University. She did her bachelor thesis on "The involvement of the protein import machinery in the course of Parkinson's disease". 
-   Recently, she joined Maslon group to do her master thesis. She will develop and characterize a cellular model of RNA polymerase II with increased elongation rate. 
-   During her free time, she likes to explore new places by travelling to various countries and photography landscapes.
-  twitter: 
-  email: alekaz9@st.amu.edu.pl
-  
-  
 - name: Vikas Patel
   role: Postdoc # Will appear next to name
   image: assets/theme/images/Vikas.jpg # Can be external link
@@ -43,4 +31,20 @@
     As a postdoctoral researcher, he is currently investigating how deregulated transcription rates affect brain development. In his spare time, he enjoys cooking and going for nature walks
   twitter: 
   email: vikas.patel@amu.edu.pl
+
+- name: Shraddha Shinde
+  role: PhD student # Will appear next to name
+  image: assets/theme/images/Shraddha.jpg # Can be external link
+  description: > # Can be Markdown
+    Shraddha earned her Master's degree in Microbiology from Pune University, India. Her Master’s thesis was on cytokine signaling in macrophages, where  worked on IL-12 (Interleukin 12) and 
+    IL- 10 (Interleukin 10) signaling in Leishmania parasite infection. After her MSc, she joined TMC-ACTREC, to identify expression levels of certain biomarkers (EGFR, COX-2, HIF1A, etc) 
+    in cancer cells. Now as a doctoral student in the Maslon lab, she is trying to understand the complexities of RNAPII elongation rate modulation in neurodevelopment. 
+    Besides her academic interests, she keeps herself busy with painting: watercolors & gouache, charcoal, sketching human anatomy, soft pastels, acrylics, and oil paint.  She reads non-fiction 
+    books, loves photography and playing with the lens. Being from Mumbai, she is obsessed with strolling on the streets of Poznan like a maniac, exploring museums, art shops, bookstores, cafes, 
+    and trying coffee, and baked products! 
+  email: shraddha.shinde@amu.edu.pl
+
+Alumni:
+- name: Ola Kazmierczak
+  
 
