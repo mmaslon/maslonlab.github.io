@@ -34,7 +34,7 @@
 
 - name: Shraddha Shinde
   role: PhD student # Will appear next to name
-  image: assets/theme/images/Shraddha.jpg # Can be external link
+  image: assets/theme/images/shraddha.jpg # Can be external link
   description: > # Can be Markdown
     Shraddha earned her Master's degree in Microbiology from Pune University, India. Her Master’s thesis was on cytokine signaling in macrophages, where  worked on IL-12 (Interleukin 12) and 
     IL- 10 (Interleukin 10) signaling in Leishmania parasite infection. After her MSc, she joined TMC-ACTREC, to identify expression levels of certain biomarkers (EGFR, COX-2, HIF1A, etc) 
@@ -44,6 +44,6 @@
     and trying coffee, and baked products! 
   email: shraddha.shinde@amu.edu.pl
 
-- name: Ola Kazmierczak
+- name: Alumni: Ola Kazmierczak
   
 
