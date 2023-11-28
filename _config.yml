@@ -4,7 +4,7 @@ description: Jekyll theme for research project websites # Site description in <h
 
 # SOCIAL PROFILES
 email: magmas6@amu.edu.pl          # Social icon in footer
-twitter_username: @magdamaslon          # Social icon in footer
+twitter_username: magdamaslon          # Social icon in footer
 
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 0                        # Show x number of latest posts on homepage, can be 0
