@@ -5,9 +5,9 @@ remark: See also page.layout == 'home' in head.html and header.html
 ---
 
 {% assign twitter_feed = true %}
-#{% if site.tweets_on_home and site.twitter_username %}
- # {% assign twitter_feed = true %}
-#{% endif %}
+ {% if site.tweets_on_home and site.twitter_username %}
+  {% assign twitter_feed = true %}
+ {% endif %}
 
 <div class="row">
   <div class="{% if twitter_feed %}col{% else %}col-md-10 col-lg-8 mx-auto{% endif %}">
