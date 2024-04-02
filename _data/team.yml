@@ -9,28 +9,7 @@
     to set up her own lab.
     Runner, climber and a mum in her spare time.
   twitter: magdamaslon
-  email: magmas6@amu.edu.pl
-
-- name: Bogna Juskowiak
-  role: Lab Manager # Will appear next to name
-  image: assets/theme/images/bogna.jpg # Can be external link
-  description: > # Can be Markdown
-   Bogna received her MSc degree in medical biotechnology from Poznan University of Medical Sciences. During her master thesis research, she worked on the use of bioengineered silk in 
-   cancer drug delivery. Next she joined the group of Rafal Ciosk at Institute of Bioorganic Chemistry, where she studied the molecular mechanism of mRNA 
-   silencing by specific RNA-binding proteins. Subsequently, she worked in the project focused on creating platform for better diagnosis and therapy of different diseases. 
-   In September 2022, she joined Magda Maslon’s group as a lab manager, where she not only ensures that the lab runs smootly, but also does experimental work on transcription kinetics.
-   She loves dogs, food and exploring new cultures.
-  twitter: 
-  email: bogna.juskowiak@amu.edu.pl
-  
-- name: Vikas Patel
-  role: Postdoc # Will appear next to name
-  image: assets/theme/images/Vikas.jpg # Can be external link
-  description: > # Can be Markdown
-    Vikas received his PhD in Medical and Health Science from the University of Debrecen, Hungary, in 2022, where he studied the molecular background of therapy resistance in human melanoma. 
-    As a postdoctoral researcher, he is currently investigating how deregulated transcription rates affect brain development. In his spare time, he enjoys cooking and going for nature walks
-  twitter: 
-  email: vikas.patel@amu.edu.pl
+  email: magdalena.maslon@uj.edu.pl
 
 - name: Shraddha Shinde
   role: PhD student # Will appear next to name
@@ -45,6 +24,6 @@
   email: shraddha.shinde@amu.edu.pl
 
 - name: >
-    Alumni : Ola Kazmierczak
+    Alumni : Bogna Juskowiak, Ola Kazmierczak, Vikas Patel
   
 
