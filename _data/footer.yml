@@ -8,6 +8,9 @@ columns:
     - text: Sonata bis
       href: https://www.ncn.gov.pl/
       new_window: true
+    - text: Opus
+      href: https://www.ncn.gov.pl/
+      new_window: true
     - text: NAWA Polskie Powroty
       href: https://nawa.gov.pl/
       new_window: true
