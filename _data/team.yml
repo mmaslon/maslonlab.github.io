@@ -6,7 +6,7 @@
   description: > # Can be Markdown
     Magda is an experimental biologist and a budding bioinformatician. She graduated from Jagiellonian University. She then did her PhD studies in cancer biology. 
     In her last post, she was a postdoc at the Caceres Lab at the University of Edinburgh. Having received funding from NCN and NAWA, she moved to Poznan
-    to set up her own lab.
+    to set up her own lab. Since then she moved again to Malopolska Centre of Biotechnology.
     Runner, climber and a mum in her spare time.
   twitter: magdamaslon
   email: magdalena.maslon@uj.edu.pl
@@ -21,7 +21,17 @@
     Besides her academic interests, she keeps herself busy with painting: watercolors & gouache, charcoal, sketching human anatomy, soft pastels, acrylics, and oil paint.  She reads non-fiction 
     books, loves photography and playing with the lens. Being from Mumbai, she is obsessed with strolling on the streets of Poznan like a maniac, exploring museums, art shops, bookstores, cafes, 
     and trying coffee, and baked products! 
-  email: shraddha.shinde@amu.edu.pl
+  email: shraddha.shinde@doctoral.uj.edu.pl
+
+- name: Magdalena Ożóg
+  role: PhD student # Will appear next to name
+  email: magdalena.ozog@doctoral.uj.edu.pl
+
+- name: Aleksandra Giza
+  role: Technician # Will appear next to name
+  email: a.giza@doctoral.uj.edu.pl
+
+  
 
 - name: >
     Alumni : Bogna Juskowiak, Ola Kazmierczak, Vikas Patel
