@@ -25,6 +25,11 @@
 
 - name: Magdalena Ożóg
   role: PhD student # Will appear next to name
+  image: assets/theme/images/mozog.jpeg
+  description: 
+    Magda completed her MSc in Medical Biotechnology at Aalborg University in Denmark, where she worked on the design of bi-specific antibodies to cross the blood-brain barrier for improved 
+    therapeutic potential. She is now a PhD student in the Maslon lab, investigating the molecular mechanisms of RNA up-regulation in trisomy 21. 
+    In her spare time, she enjoys playing the drums, practicing yoga and working-out.
   email: magdalena.ozog@doctoral.uj.edu.pl
 
 - name: Aleksandra Giza
