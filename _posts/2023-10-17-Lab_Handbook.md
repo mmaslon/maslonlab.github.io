@@ -7,7 +7,7 @@ background: /assets/theme/images/czt.png
 
 _This is inspired by Emma Chory, Angelika Feldmann, and others._
 
-Welcome to Maslon Lab. We are a new team of researchers based at the Centre for Advanced Technologies, University of Adam Mickiewicz Poznan, A204, A240, A259. This document is to help you understand how our group works, what is expected from each of the group members, including a PI and what you can expect from being part of the group. The handbook is expected to help the group thrive.  
+Welcome to Maslon Lab. We are a new team of researchers based at the Malopolska Centre of Biotechnolgy, Jagiellonian University. This document is to help you understand how our group works, what is expected from each of the group members, including a PI and what you can expect from being part of the group. The handbook is expected to help the group thrive.  
 
 We ask that every new member of the group reads this document within their first month in the lab. This is not a finished product. If you have any questions, concerns or feedback, to let us know and we can try and improve it.  
 
